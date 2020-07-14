@@ -25,7 +25,6 @@ public class Main {
 			appliances = service.find(criteriaOven);
 		} catch (ServiceException e) {
 			e.printStackTrace();
-			;
 		}
 
 		PrintListApplianceInfo.print(appliances);
