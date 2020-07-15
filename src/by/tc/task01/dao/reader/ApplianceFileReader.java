@@ -22,9 +22,9 @@ public class ApplianceFileReader implements ApplianceReader {
 			fileReader = new FileReader(file);
 			reader = new BufferedReader(fileReader);
 		} catch (FileNotFoundException e) {
-			throw new DAOException("resource file is not found");
+			throw new DAOException("resource file is not found",e);
 		} catch (IOException e) {
-			throw new DAOException("input output error");
+			throw new DAOException("input output error", e);
 		}
 	}
 
